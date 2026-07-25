@@ -1,0 +1,62 @@
+MINCER-ZARNOWITZ: fwd_rv = a + b*iv
+======================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 fwd_rv   R-squared:                       0.084
+Model:                            OLS   Adj. R-squared:                  0.084
+Method:                 Least Squares   F-statistic:                     376.3
+Date:                Fri, 24 Jul 2026   Prob (F-statistic):           2.79e-80
+Time:                        23:37:32   Log-Likelihood:                -14696.
+No. Observations:                4102   AIC:                         2.940e+04
+Df Residuals:                    4100   BIC:                         2.941e+04
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          7.5698      0.391     19.350      0.000       6.803       8.337
+iv             0.3860      0.020     19.400      0.000       0.347       0.425
+==============================================================================
+Omnibus:                     3611.786   Durbin-Watson:                   0.024
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           140659.223
+Skew:                           4.109   Prob(JB):                         0.00
+Kurtosis:                      30.485   Cond. No.                         56.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+ENCOMPASSING: fwd_rv = a + b1*iv + b2*trailing_rv
+======================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 fwd_rv   R-squared:                       0.084
+Model:                            OLS   Adj. R-squared:                  0.084
+Method:                 Least Squares   F-statistic:                     188.2
+Date:                Fri, 24 Jul 2026   Prob (F-statistic):           6.17e-79
+Time:                        23:37:32   Log-Likelihood:                -14696.
+No. Observations:                4102   AIC:                         2.940e+04
+Df Residuals:                    4099   BIC:                         2.942e+04
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           7.6306      0.414     18.418      0.000       6.818       8.443
+iv              0.3736      0.034     10.912      0.000       0.306       0.441
+trailing_rv     0.0115      0.026      0.446      0.655      -0.039       0.062
+==============================================================================
+Omnibus:                     3612.843   Durbin-Watson:                   0.024
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           140773.640
+Skew:                           4.111   Prob(JB):                         0.00
+Kurtosis:                      30.496   Cond. No.                         78.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+FORECAST ACCURACY
+======================================================================
+                                   RMSE       MAE
+Implied volatility (VIX)      10.363280  7.181128
+Trailing realized volatility  11.219702  6.633868

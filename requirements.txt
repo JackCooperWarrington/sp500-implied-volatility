@@ -1,0 +1,9 @@
+# Pinned versions used to produce all results in this paper.
+# Later versions will likely work but exact numerical reproduction is not
+# guaranteed if versions change.
+numpy==2.4.4
+scipy==1.17.1
+pandas==3.0.2
+statsmodels==0.14.6
+matplotlib==3.10.8
+yfinance==1.5.1
